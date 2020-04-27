@@ -135,6 +135,9 @@ public:
     bool isFullyLoaded() const;
     void dumpDebugLogs() const;
 
+    void setFreeCameraOptions(const FreeCameraOptions& camera);
+    FreeCameraOptions getFreeCameraOptions() const;
+
 protected:
     class Impl;
     const std::unique_ptr<Impl> impl;
